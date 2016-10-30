@@ -79,48 +79,56 @@
 		},
 		methods: {
 
+			/**
+			 * Handler for the up arrow keydown event
+			 * @param  {Object} e The event's object
+			 * @return {void}
+			 */
 			goUp(e) {
-				console.log('goUp');
-				console.time('goUp')
 				try {
 					this.$el.querySelector(`#${e.target.getAttribute('data-up')}`).focus()
 				} catch(something) {
 					if (typeof something !== 'undefined') console.log(something);
 				}
-				console.timeEnd('goUp')
 			},
 
+			/**
+			 * Handler for the right arrow keydown event
+			 * @param  {Object} e The event's object
+			 * @return {void}
+			 */
 			goRight(e) {
-				console.log('goRight');
-				console.time('goRight');
 				try {
 					this.$el.querySelector(`#${e.target.getAttribute('data-right')}`).focus()
 				} catch(something) {
 					if (typeof something !== 'undefined') console.log(something);
 				}
-				console.timeEnd('goRight')
 			},
 
+			/**
+			 * Handler for the down arrow keydown event
+			 * @param  {Object} e The event's object
+			 * @return {void}
+			 */
 			goDown(e) {
-				console.log('goDown');
-				console.time('goDown');
 				try {
 					this.$el.querySelector(`#${e.target.getAttribute('data-down')}`).focus()
 				} catch(something) {
 					if (typeof something !== 'undefined') console.log(something);
 				}
-				console.timeEnd('goDown');
 			},
 
+			/**
+			 * Handler for the left arrow keydown event
+			 * @param  {Object} e The event's object
+			 * @return {void}
+			 */
 			goLeft(e) {
-				console.log('goLeft');
-				console.time('goLeft');
 				try {
 					this.$el.querySelector(`#${e.target.getAttribute('data-left')}`).focus()
 				} catch(something) {
 					if (typeof something !== 'undefined') console.log(something);
 				}
-				console.timeEnd('goLeft');
 			},
 
 			/**
