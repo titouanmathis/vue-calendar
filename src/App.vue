@@ -29,6 +29,9 @@ export default {
 	}
 
 	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		padding: 2em;
 		font: 400 1em/2 -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #333;
